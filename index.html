@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Currency Converter</h1>
+            <p>Check live rates, set rate alerts, receive notifications and more.</p>
+        </div>
+
+        <!-- Converter Card -->
+        <div class="converter-card">
+            <div class="amount-section">
+                <label for="amount">Amount</label>
+                <div class="input-row">
+                    <div class="currency-box">
+                        <select id="from-currency">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <!-- Add more currency options here -->
+                        </select>
+                    </div>
+                    <input type="number" id="amount" value="1000">
+                </div>
+            </div>
+
+            <div class="exchange-icon">
+                <img src="exchange-icon.png" alt="Exchange Icon">
+            </div>
+
+            <div class="result-section">
+                <label for="converted-amount">Converted Amount</label>
+                <div class="input-row">
+                    <div class="currency-box">
+                        <select id="to-currency">
+                            <option value="SGD">SGD</option>
+                            <option value="EUR">EUR</option>
+                            <!-- Add more currency options here -->
+                        </select>
+                    </div>
+                    <input type="text" id="converted-amount" disabled value="1356.74">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Number Keyboard Simulation -->
+        <div class="keyboard">
+            
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
+
